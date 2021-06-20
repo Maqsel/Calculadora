@@ -1,0 +1,425 @@
+package calculadora;
+
+
+
+    public class calculadora extends javax.swing.JFrame {
+    public float num1;
+    public float num2;
+    public String op;
+    public calculadora() {
+        initComponents();
+    }
+
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        botontres1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        botonuno = new javax.swing.JButton();
+        botondos = new javax.swing.JButton();
+        botoncinco = new javax.swing.JButton();
+        botoncuatro = new javax.swing.JButton();
+        botonsiete = new javax.swing.JButton();
+        botonocho = new javax.swing.JButton();
+        igual = new javax.swing.JButton();
+        txtResultado = new javax.swing.JLabel();
+        suma = new javax.swing.JButton();
+        resta = new javax.swing.JButton();
+        multiplicacion = new javax.swing.JButton();
+        C = new javax.swing.JButton();
+        botoncero1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        botonseis = new javax.swing.JButton();
+        botontres = new javax.swing.JButton();
+        AC1 = new javax.swing.JButton();
+        division = new javax.swing.JButton();
+        botonnueve = new javax.swing.JButton();
+        punto = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+
+        botontres1.setText("jButton1");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 102, 153));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        botonuno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/ultimo.jpg"))); // NOI18N
+        botonuno.setText("1");
+        botonuno.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botonuno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonunoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botonuno, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 83, 34));
+
+        botondos.setIcon(new javax.swing.ImageIcon("C:\\Users\\LENOVO\\Desktop\\Nueva carpeta\\ultimo.jpg")); // NOI18N
+        botondos.setText("2");
+        botondos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botondos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botondosActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botondos, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 83, 34));
+
+        botoncinco.setIcon(new javax.swing.ImageIcon("C:\\Users\\LENOVO\\Desktop\\Nueva carpeta\\ultimo.jpg")); // NOI18N
+        botoncinco.setText("5");
+        botoncinco.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botoncinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botoncincoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botoncinco, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, 83, 34));
+
+        botoncuatro.setIcon(new javax.swing.ImageIcon("C:\\Users\\LENOVO\\Desktop\\Nueva carpeta\\ultimo.jpg")); // NOI18N
+        botoncuatro.setText("4");
+        botoncuatro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botoncuatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botoncuatroActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botoncuatro, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 83, 34));
+
+        botonsiete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/ultimo.jpg"))); // NOI18N
+        botonsiete.setText("7");
+        botonsiete.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botonsiete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonsieteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botonsiete, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 83, 34));
+
+        botonocho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/ultimo.jpg"))); // NOI18N
+        botonocho.setText("8");
+        botonocho.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botonocho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonochoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botonocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 83, 34));
+
+        igual.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        igual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        igual.setText("=");
+        igual.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        igual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                igualActionPerformed(evt);
+            }
+        });
+        getContentPane().add(igual, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, 83, 34));
+
+        txtResultado.setBackground(new java.awt.Color(255, 255, 51));
+        txtResultado.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
+        txtResultado.setForeground(new java.awt.Color(102, 102, 102));
+        txtResultado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        txtResultado.setText("Caluladora de seline");
+        getContentPane().add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 50, 350, 120));
+
+        suma.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        suma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        suma.setText("+");
+        suma.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        suma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sumaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(suma, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 83, 40));
+
+        resta.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        resta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        resta.setText("-");
+        resta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        resta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                restaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(resta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 83, 36));
+
+        multiplicacion.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        multiplicacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        multiplicacion.setText("*");
+        multiplicacion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        multiplicacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                multiplicacionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(multiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 350, 80, 40));
+
+        C.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        C.setText("C");
+        C.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CActionPerformed(evt);
+            }
+        });
+        getContentPane().add(C, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 83, 36));
+
+        botoncero1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/ultimo.jpg"))); // NOI18N
+        botoncero1.setText("0");
+        botoncero1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botoncero1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botoncero1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botoncero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 450, 83, 34));
+
+        jPanel2.setBackground(new java.awt.Color(255, 153, 153));
+        jPanel2.setForeground(new java.awt.Color(255, 51, 153));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        botonseis.setIcon(new javax.swing.ImageIcon("C:\\Users\\LENOVO\\Desktop\\Nueva carpeta\\ultimo.jpg")); // NOI18N
+        botonseis.setText("6");
+        botonseis.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botonseis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonseisActionPerformed(evt);
+            }
+        });
+        jPanel2.add(botonseis, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 83, 34));
+
+        botontres.setIcon(new javax.swing.ImageIcon("C:\\Users\\LENOVO\\Desktop\\Nueva carpeta\\ultimo.jpg")); // NOI18N
+        botontres.setText("3");
+        botontres.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botontres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botontresActionPerformed(evt);
+            }
+        });
+        jPanel2.add(botontres, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 83, 34));
+
+        AC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        AC1.setText("AC");
+        AC1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        AC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AC1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(AC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 83, 36));
+
+        division.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        division.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        division.setText("/");
+        division.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        division.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divisionActionPerformed(evt);
+            }
+        });
+        jPanel2.add(division, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, 83, 36));
+
+        botonnueve.setIcon(new javax.swing.ImageIcon("C:\\Users\\LENOVO\\Desktop\\Nueva carpeta\\ultimo.jpg")); // NOI18N
+        botonnueve.setText("9");
+        botonnueve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        botonnueve.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonnueveActionPerformed(evt);
+            }
+        });
+        jPanel2.add(botonnueve, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 83, 34));
+
+        punto.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        punto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadora/descarga (1).jpg"))); // NOI18N
+        punto.setText(".");
+        punto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        punto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                puntoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(punto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 80, 30));
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 370, 180));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 390, 490));
+
+        pack();
+    }// </editor-fold>                        
+
+    private void botonunoActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    this.txtResultado.setText(this.txtResultado.getText()+"1");
+    }                                        
+
+    private void multiplicacionActionPerformed(java.awt.event.ActionEvent evt) {                                               
+    this.num1=Float.parseFloat(this.txtResultado.getText());
+        this.op="*";
+        this.txtResultado.setText(" ");
+
+    }                                              
+
+    private void divisionActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      this.num1=Float.parseFloat(this.txtResultado.getText());
+        this.op="/";
+        this.txtResultado.setText(" ");
+
+    }                                        
+
+    /**
+     *
+     * @param txtResultado
+     * @return
+     */
+  
+
+    private void botoncero1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+       this.txtResultado.setText(this.txtResultado.getText()+"0");
+
+    }                                          
+
+    private void botonnueveActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        this.txtResultado.setText(this.txtResultado.getText()+"9");    }                                          
+
+    private void botonochoActionPerformed(java.awt.event.ActionEvent evt) {                                          
+         this.txtResultado.setText(this.txtResultado.getText()+"8");
+    }                                         
+
+    private void botonsieteActionPerformed(java.awt.event.ActionEvent evt) {                                           
+this.txtResultado.setText(this.txtResultado.getText()+"7");    }                                          
+
+    private void botonseisActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        this.txtResultado.setText(this.txtResultado.getText()+"6");
+    }                                         
+
+    private void botoncincoActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        this.txtResultado.setText(this.txtResultado.getText()+"5");
+    }                                          
+
+    private void botoncuatroActionPerformed(java.awt.event.ActionEvent evt) {                                            
+       this.txtResultado.setText(this.txtResultado.getText()+"4");
+    }                                           
+
+    private void botontresActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        this.txtResultado.setText(this.txtResultado.getText()+"3");
+    }                                         
+
+    private void botondosActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        this.txtResultado.setText(this.txtResultado.getText()+"2");
+    }                                        
+
+    private void AC1ActionPerformed(java.awt.event.ActionEvent evt) {                                    
+        String texto =txtResultado.getText().substring(0,txtResultado.getText().length()-1);
+        txtResultado.setText(texto);
+
+    }                                   
+
+    private void CActionPerformed(java.awt.event.ActionEvent evt) {                                  
+        this.txtResultado.setText(" ");
+    }                                 
+
+    private void sumaActionPerformed(java.awt.event.ActionEvent evt) {                                     
+       this.num1=Float.parseFloat(this.txtResultado.getText());
+        this.op="+";
+        this.txtResultado.setText(" ");
+
+    }                                    
+
+    private void restaActionPerformed(java.awt.event.ActionEvent evt) {                                      
+       this.num1=Float.parseFloat(this.txtResultado.getText());
+        this.op="-";
+        this.txtResultado.setText(" ");
+
+    }                                     
+
+    private void puntoActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        if(!(this.txtResultado.getText().contains("."))){
+            this.txtResultado.setText(this.txtResultado.getText()+".");
+        }
+
+    }                                     
+
+    private void igualActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        this.num2=Float.parseFloat(this.txtResultado.getText());
+        
+        switch(this.op){
+            case "+":this.txtResultado.setText(zero(this.num1+this.num2));break;
+            case "-":this.txtResultado.setText(zero(this.num1-this.num2));break;
+            case "*":this.txtResultado.setText(zero(this.num1*this.num2));break;
+            
+            case "/":if(this.num2==0){ this.txtResultado.setText("indeterminado");}
+          
+            else{
+                this.txtResultado.setText(zero(this.num1/this.num2));}break;
+        }
+
+    }                                     
+
+      public String zero (float txtResultado){   //para que salga entero la division y no decimal
+         String retorno="";
+         retorno=Float.toString(txtResultado);
+         if(txtResultado%1==0){
+             retorno=retorno.substring(0,retorno.length()-2);
+         }
+         
+         return retorno;
+    }
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new calculadora().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton AC1;
+    private javax.swing.JButton C;
+    private javax.swing.JButton botoncero1;
+    private javax.swing.JButton botoncinco;
+    private javax.swing.JButton botoncuatro;
+    private javax.swing.JButton botondos;
+    private javax.swing.JButton botonnueve;
+    private javax.swing.JButton botonocho;
+    private javax.swing.JButton botonseis;
+    private javax.swing.JButton botonsiete;
+    private javax.swing.JButton botontres;
+    private javax.swing.JButton botontres1;
+    private javax.swing.JButton botonuno;
+    private javax.swing.JButton division;
+    private javax.swing.JButton igual;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton multiplicacion;
+    private javax.swing.JButton punto;
+    private javax.swing.JButton resta;
+    private javax.swing.JButton suma;
+    private javax.swing.JLabel txtResultado;
+    // End of variables declaration                   
+}
